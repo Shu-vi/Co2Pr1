@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="487.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerAddJob">
+   <children>
+      <GridPane gridLinesVisible="true" layoutX="81.0" layoutY="83.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="addJob_salary" GridPane.columnIndex="1" />
+            <TextField fx:id="addJob_education" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="addJob_requirements" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField fx:id="addJob_contactInformation" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Label text="Зарплата">
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </Label>
+            <Label text="Вакансия" GridPane.rowIndex="1">
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </Label>
+            <Label text="Образование" GridPane.rowIndex="2">
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </Label>
+            <Label text="График работы" GridPane.rowIndex="3">
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </Label>
+            <Label text="Опыт работы" GridPane.rowIndex="4">
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </Label>
+            <Label text="Город" GridPane.rowIndex="5">
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </Label>
+            <Label text="Требования" GridPane.rowIndex="6">
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </Label>
+            <Label text="Контактная информация" GridPane.rowIndex="7">
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </Label>
+            <ComboBox fx:id="addJob_workSchedule" prefHeight="25.0" prefWidth="235.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <ComboBox fx:id="addJob_job" prefHeight="25.0" prefWidth="235.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <ComboBox fx:id="addJob_workExperience" prefHeight="25.0" prefWidth="235.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <ComboBox fx:id="addJob_city" prefHeight="25.0" prefWidth="235.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+         </children>
+      </GridPane>
+      <Button fx:id="addJob_buttonOk" layoutX="44.0" layoutY="310.0" mnemonicParsing="false" onAction="#ok" style="-fx-background-color: #4682B4; -fx-border-color: #00FFFF; -fx-background-radius: 30; -fx-border-radius: 30;" text="Ок" textFill="WHITE" AnchorPane.leftAnchor="59.0" />
+      <Button fx:id="addJob_buttonCancel" layoutX="294.0" layoutY="310.0" mnemonicParsing="false" onAction="#cancel" style="-fx-background-color: #4682B4; -fx-border-color: #00FFFF; -fx-background-radius: 30; -fx-border-radius: 30;" text="Отмена" textFill="WHITE" AnchorPane.rightAnchor="49.0" />
+   </children>
+</AnchorPane>
